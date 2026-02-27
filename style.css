@@ -374,56 +374,46 @@ body {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    margin-left: auto;
-    /* Push to the right */
+    z-index: 1001;
+    /* Ensure button is above the full screen menu */
   }
 
-  .header {
-    flex-wrap: wrap;
-    /* Allow nav to wrap below */
-    padding: 1rem 1.5rem;
-    /* Slightly smaller padding on mobile */
-  }
-
-  /* Make sure site-title and hamburger stay on same line */
   .site-title {
-    flex-grow: 1;
+    position: relative;
+    z-index: 1001;
+    /* Ensure title is above the full screen menu */
   }
 
   .nav {
-    position: static;
-    /* Remove absolute positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    transform: none;
-    /* Remove centering transform */
-    flex-direction: column;
-    align-items: center;
+    height: 100vh;
     background: var(--color-bg);
-
-    /* Dropdown animation setup */
-    max-height: 0;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transform: translateY(-100%);
     opacity: 0;
-    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    display: flex;
     padding: 0;
-    margin-top: 0;
+    margin: 0;
   }
 
   .nav.active {
-    max-height: 300px;
-    /* Adjust based on content height */
+    transform: translateY(0);
     opacity: 1;
-    padding: 1rem 0;
-    margin-top: 1rem;
-    border-top: 1px solid var(--color-border);
+    border-top: none;
   }
 
   .nav a {
-    margin: 0 0 1rem 0;
-    font-size: 1.1rem;
-    width: 100%;
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
     text-align: center;
-    display: block;
+    width: auto;
   }
 
   .nav a:last-child {
