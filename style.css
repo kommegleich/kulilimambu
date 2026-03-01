@@ -108,8 +108,9 @@ body {
 
 .grid-item:hover img,
 .grid-item:hover video {
-  opacity: 0.7;
-  transform: none;
+  opacity: 1;
+  transform: scale(1.05);
+  /* 미세한 확대 효과 */
 }
 
 /* Footer & Contact */
