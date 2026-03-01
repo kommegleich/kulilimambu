@@ -1,0 +1,13 @@
+{
+  "name": "kulilimambu",
+  "version": "1.0.0",
+  "description": "## ⚡ 바로 보기 (서버 없음, 즉시)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:images": "node -e 'const fs = require(\"fs\"); const files = fs.readdirSync(\"./images\"); const kuliliImages = files.filter(f => f.startsWith(\"kulili_\") && f.endsWith(\".webp\")); fs.writeFileSync(\"images.json\", JSON.stringify(kuliliImages, null, 2));'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
