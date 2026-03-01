@@ -5,12 +5,14 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:images": "node build.js"
+    "build:images": "node build.js",
+    "watch": "node watch.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chokidar": "^5.0.0",
     "sharp": "^0.34.5"
   }
 }
