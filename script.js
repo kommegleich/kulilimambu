@@ -3,8 +3,6 @@ document.querySelector('.back-to-top').addEventListener('click', function (e) {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-<<<<<<< HEAD
-
 // Hamburger Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
@@ -23,5 +21,3 @@ if (hamburger && nav) {
     });
   });
 }
-=======
->>>>>>> b3373d1 (first commit)
