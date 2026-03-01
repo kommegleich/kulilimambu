@@ -336,6 +336,7 @@ body {
   transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
 /* Hamburger Menu Button */
 .hamburger {
   display: none;
@@ -434,10 +435,14 @@ body {
     grid-template-columns: 1fr;
   }
 
+=======
+@media (max-width: 600px) {
+>>>>>>> b3373d1 (first commit)
   .form-row {
     flex-direction: column;
     gap: 0;
   }
+<<<<<<< HEAD
 
   /* Restore padding for project text elements but NOT the gallery */
   .back-icon,
@@ -446,4 +451,6 @@ body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+=======
+>>>>>>> b3373d1 (first commit)
 }
