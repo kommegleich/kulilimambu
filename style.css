@@ -109,7 +109,7 @@ body {
 .grid-item:hover img,
 .grid-item:hover video {
   opacity: 1;
-  transform: scale(1.02);
+  transform: scale(1.01);
   /* 미세한 확대 효과 */
 }
 
