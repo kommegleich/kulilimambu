@@ -5,9 +5,9 @@
     "baseName": "kulili_aquaticstep"
   },
   {
-    "static": "kulili_azure_dive.webp",
+    "static": "kulili_embrace.webp",
     "animated": null,
-    "baseName": "kulili_azure_dive"
+    "baseName": "kulili_embrace"
   },
   {
     "static": "kulili_eternalsol.webp",
@@ -45,9 +45,9 @@
     "baseName": "kulili_giantdream"
   },
   {
-    "static": "kulili_green_orbit.webp",
+    "static": "kulili_greenorbit.webp",
     "animated": null,
-    "baseName": "kulili_green_orbit"
+    "baseName": "kulili_greenorbit"
   },
   {
     "static": "kulili_hollowecho.webp",
@@ -73,11 +73,6 @@
     "static": "kulili_mysticluna.webp",
     "animated": null,
     "baseName": "kulili_mysticluna"
-  },
-  {
-    "static": "kulili_ocean_embrace.webp",
-    "animated": null,
-    "baseName": "kulili_ocean_embrace"
   },
   {
     "static": "kulili_perheps.webp",
@@ -135,9 +130,9 @@
     "baseName": "kulili_vaguehorizon"
   },
   {
-    "static": "kulili_wild_roadtrip.webp",
+    "static": "kulili_wildroadtrip.webp",
     "animated": null,
-    "baseName": "kulili_wild_roadtrip"
+    "baseName": "kulili_wildroadtrip"
   },
   {
     "static": "kulili_window_voyage.webp",
