@@ -10,6 +10,11 @@
     "baseName": "kulili_azure_dive"
   },
   {
+    "static": "kulili_eternalsol.webp",
+    "animated": null,
+    "baseName": "kulili_eternalsol"
+  },
+  {
     "static": "kulili_flamecapture.webp",
     "animated": null,
     "baseName": "kulili_flamecapture"
@@ -18,6 +23,16 @@
     "static": "kulili_floralhug.webp",
     "animated": null,
     "baseName": "kulili_floralhug"
+  },
+  {
+    "static": "kulili_forestbloom.webp",
+    "animated": null,
+    "baseName": "kulili_forestbloom"
+  },
+  {
+    "static": "kulili_gentlevelvet.webp",
+    "animated": null,
+    "baseName": "kulili_gentlevelvet"
   },
   {
     "static": "kulili_geometry.webp",
@@ -35,6 +50,11 @@
     "baseName": "kulili_green_orbit"
   },
   {
+    "static": "kulili_hollowecho.webp",
+    "animated": null,
+    "baseName": "kulili_hollowecho"
+  },
+  {
     "static": "kulili_lunarembrace.webp",
     "animated": null,
     "baseName": "kulili_lunarembrace"
@@ -43,6 +63,16 @@
     "static": "kulili_melodygarden.webp",
     "animated": null,
     "baseName": "kulili_melodygarden"
+  },
+  {
+    "static": "kulili_midnightveil.webp",
+    "animated": null,
+    "baseName": "kulili_midnightveil"
+  },
+  {
+    "static": "kulili_mysticluna.webp",
+    "animated": null,
+    "baseName": "kulili_mysticluna"
   },
   {
     "static": "kulili_ocean_embrace.webp",
@@ -55,14 +85,54 @@
     "baseName": "kulili_perheps"
   },
   {
+    "static": "kulili_purebless.webp",
+    "animated": null,
+    "baseName": "kulili_purebless"
+  },
+  {
     "static": "kulili_rhythm.webp",
     "animated": "kulili_rhythm.gif",
     "baseName": "kulili_rhythm"
   },
   {
+    "static": "kulili_sacredritual.webp",
+    "animated": null,
+    "baseName": "kulili_sacredritual"
+  },
+  {
+    "static": "kulili_sacredriver.webp",
+    "animated": null,
+    "baseName": "kulili_sacredriver"
+  },
+  {
+    "static": "kulili_silentdrift.webp",
+    "animated": null,
+    "baseName": "kulili_silentdrift"
+  },
+  {
     "static": "kulili_spotlight.webp",
     "animated": "kulili_spotlight.gif",
     "baseName": "kulili_spotlight"
+  },
+  {
+    "static": "kulili_stillvoid.webp",
+    "animated": null,
+    "baseName": "kulili_stillvoid"
+  },
+  {
+    "static": "kulili_sunsettrance.webp",
+    "animated": null,
+    "baseName": "kulili_sunsettrance"
+  },
+  {
+    "static": "kulili_tendergrasp.webp",
+    "animated": null,
+    "baseName": "kulili_tendergrasp"
+  },
+  {
+    "static": "kulili_vaguehorizon.webp",
+    "animated": null,
+    "baseName": "kulili_vaguehorizon"
   },
   {
     "static": "kulili_wild_roadtrip.webp",
