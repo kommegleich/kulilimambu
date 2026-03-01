@@ -103,12 +103,13 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .grid-item:hover img,
 .grid-item:hover video {
   opacity: 1;
+  /* 딤처리(dim) 삭제, 원본 불투명도 유지 */
   transform: scale(1.01);
   /* 미세한 확대 효과 */
 }
