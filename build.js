@@ -74,6 +74,47 @@ async function processImages() {
             }
         }
 
+        // --- HTML Template Generation ---
+        const rootDir = __dirname;
+        const templatePath = path.join(rootDir, 'project.html');
+        let templateHtml = '';
+
+        if (fs.existsSync(templatePath)) {
+            templateHtml = fs.readFileSync(templatePath, 'utf8');
+
+            for (const item of imagesData) {
+                const title = item.baseName.replace(/^kulili_/, '');
+                const projectFilePath = path.join(rootDir, `project_${title}.html`);
+
+                // Only generate if the file doesn't already exist so we don't overwrite user's manual text edits
+                if (!fs.existsSync(projectFilePath)) {
+                    console.log(`Generating new detail page: project_${title}.html`);
+
+                    let newHtml = templateHtml;
+
+                    // Modify Title tags
+                    newHtml = newHtml.replace('<title>Project - kulilimambu</title>', `<title>${title} - kulilimambu</title>`);
+                    newHtml = newHtml.replace('<h2 class="project-main-title">PROJECT TITLE</h2>', `<h2 class="project-main-title">${title}</h2>`);
+
+                    // Replace Gallery Content with the specific images for this item
+                    const galleryRegex = /<div class="project-gallery">([\s\S]*?)<\/div>/;
+                    const galleryMatch = newHtml.match(galleryRegex);
+
+                    if (galleryMatch) {
+                        let mediaHtml = `<img src="images/${item.static}" alt="${title}">`;
+                        if (item.animated) {
+                            mediaHtml += `\n                <img src="images/${item.animated}" alt="${title} Animated">`;
+                        }
+                        newHtml = newHtml.replace(galleryRegex, `<div class="project-gallery">\n                ${mediaHtml}\n            </div>`);
+                    }
+
+                    fs.writeFileSync(projectFilePath, newHtml);
+                }
+            }
+        } else {
+            console.warn('project.html template not found, skipping individual page generation.');
+        }
+
         // Write the output to images.json
         fs.writeFileSync('images.json', JSON.stringify(imagesData, null, 2));
         console.log(`Successfully built images.json with ${imagesData.length} items.`);

@@ -40,7 +40,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       // Render to DOM
       finalImages.forEach((imgData, index) => {
         const anchor = document.createElement('a');
-        anchor.href = 'project.html';
+
+        // Get the specific title from the baseName (remove 'kulili_')
+        const title = imgData.baseName.replace(/^kulili_/, '');
+        anchor.href = `project_${title}.html`;
+
         anchor.className = 'grid-item';
 
         const img = document.createElement('img');
