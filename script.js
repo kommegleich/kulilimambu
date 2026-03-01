@@ -38,15 +38,27 @@ document.addEventListener("DOMContentLoaded", async () => {
       const finalImages = await res.json();
 
       // Render to DOM
-      finalImages.forEach((imgSrc, index) => {
+      finalImages.forEach((imgData, index) => {
         const anchor = document.createElement('a');
         anchor.href = 'project.html';
         anchor.className = 'grid-item';
 
         const img = document.createElement('img');
-        img.src = `images/${imgSrc}`;
-        img.alt = `작품 ${index + 1}`;
+        // By default, show the static WebP image
+        img.src = `images/${imgData.static}`;
+        img.alt = `작품 ${index + 1} - ${imgData.baseName}`;
         img.loading = 'lazy'; // Good practice for grids
+
+        // If there's an animated GIF version, set up hover listeners
+        if (imgData.animated) {
+          anchor.addEventListener('mouseenter', () => {
+            img.src = `images/${imgData.animated}`;
+          });
+
+          anchor.addEventListener('mouseleave', () => {
+            img.src = `images/${imgData.static}`;
+          });
+        }
 
         anchor.appendChild(img);
         gridContainer.appendChild(anchor);

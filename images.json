@@ -1,17 +1,77 @@
 [
-  "kulili_aquaticstep.jpg",
-  "kulili_azure_dive.jpg",
-  "kulili_flamecapture.jpg",
-  "kulili_floralhug.jpg",
-  "kulili_geometry.jpg",
-  "kulili_giantdream.jpg",
-  "kulili_green_orbit.jpg",
-  "kulili_lunarembrace.jpg",
-  "kulili_melodygarden.jpg",
-  "kulili_ocean_embrace.jpg",
-  "kulili_perheps.gif",
-  "kulili_rhythm.gif",
-  "kulili_spotlight.gif",
-  "kulili_wild_roadtrip.jpg",
-  "kulili_window_voyage.jpg"
+  {
+    "static": "kulili_aquaticstep.webp",
+    "animated": null,
+    "baseName": "kulili_aquaticstep"
+  },
+  {
+    "static": "kulili_azure_dive.webp",
+    "animated": null,
+    "baseName": "kulili_azure_dive"
+  },
+  {
+    "static": "kulili_flamecapture.webp",
+    "animated": null,
+    "baseName": "kulili_flamecapture"
+  },
+  {
+    "static": "kulili_floralhug.webp",
+    "animated": null,
+    "baseName": "kulili_floralhug"
+  },
+  {
+    "static": "kulili_geometry.webp",
+    "animated": null,
+    "baseName": "kulili_geometry"
+  },
+  {
+    "static": "kulili_giantdream.webp",
+    "animated": null,
+    "baseName": "kulili_giantdream"
+  },
+  {
+    "static": "kulili_green_orbit.webp",
+    "animated": null,
+    "baseName": "kulili_green_orbit"
+  },
+  {
+    "static": "kulili_lunarembrace.webp",
+    "animated": null,
+    "baseName": "kulili_lunarembrace"
+  },
+  {
+    "static": "kulili_melodygarden.webp",
+    "animated": null,
+    "baseName": "kulili_melodygarden"
+  },
+  {
+    "static": "kulili_ocean_embrace.webp",
+    "animated": null,
+    "baseName": "kulili_ocean_embrace"
+  },
+  {
+    "static": "kulili_perheps.webp",
+    "animated": "kulili_perheps.gif",
+    "baseName": "kulili_perheps"
+  },
+  {
+    "static": "kulili_rhythm.webp",
+    "animated": "kulili_rhythm.gif",
+    "baseName": "kulili_rhythm"
+  },
+  {
+    "static": "kulili_spotlight.webp",
+    "animated": "kulili_spotlight.gif",
+    "baseName": "kulili_spotlight"
+  },
+  {
+    "static": "kulili_wild_roadtrip.webp",
+    "animated": null,
+    "baseName": "kulili_wild_roadtrip"
+  },
+  {
+    "static": "kulili_window_voyage.webp",
+    "animated": null,
+    "baseName": "kulili_window_voyage"
+  }
 ]
